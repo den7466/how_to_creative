@@ -1,0 +1,38 @@
+.header {
+  background-color: #000;
+  padding: 37.5px 0;
+}
+
+.header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {}
+
+.header__menu {}
+
+.header__menu-button {
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 20px 30px;
+  font-family: 'Yandex Sans Text', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  cursor: pointer;
+}
+
+.header__menu-button::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 14px;
+  background-image: url(../images/burger_button.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  margin-right: 14px;
+}
