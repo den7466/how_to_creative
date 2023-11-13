@@ -102,7 +102,75 @@
         </ul>
       </div>
     </section>
-    <section></section>
+    <section class="order">
+      <div class="container">
+        <h2 class="order__title">Заказать книгу</h2>
+        <form class="order__form" action="/" method="post">
+          <fieldset class="order__fieldset order__fieldset-textfields">
+            <label class="order__label visually-hidden" for="name">Ваше имя</label>
+            <input class="order__textfield" type="text" name="name" id="name" placeholder="Как вас зовут?">
+            <label class="order__label visually-hidden" for="phone">Номер телефона</label>
+            <input class="order__textfield" type="tel" name="phone" id="phone" placeholder="+7 (9">
+          </fieldset>
+          <fieldset class="order__fieldset">
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Искусство мыслить креативно</span>
+            </label>
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Генерация идей</span>
+            </label>
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Креативный гений</span>
+            </label>
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Как мыслить креативно</span>
+            </label>
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Управление креативностью. Как быть креативным и привносить новое в бизнес</span>
+            </label>
+            <label class="order__label">
+              <input class="order__checkbox visually-hidden" type="checkbox" name="">
+              <span class="order__pseudo-checkbox"></span>
+              <span class="order__label-text">Где рождаются идеи</span>
+            </label>
+          </fieldset>
+          <fieldset class="order__fieldset">
+            <h3 class="order__referer-title">Откуда вы узнали про нас?</h3>
+            <label class="order__label">
+              <input class="order__radio visually-hidden" type="radio" name="" id="">
+              <span class="order__pseudo-radio"></span>
+              <span class="order__label-text">Telegram</span>
+            </label>
+            <label class="order__label">
+              <input class="order__radio visually-hidden" type="radio" name="" id="">
+              <span class="order__pseudo-radio"></span>
+              <span class="order__label-text">Instagram</span>
+            </label>
+            <label class="order__label">
+              <input class="order__radio visually-hidden" type="radio" name="" id="">
+              <span class="order__pseudo-radio"></span>
+              <span class="order__label-text">Vk</span>
+            </label>
+            <label class="order__label">
+              <input class="order__radio visually-hidden" type="radio" name="" id="">
+              <span class="order__pseudo-radio"></span>
+              <span class="order__label-text">Другое</span>
+            </label>
+          </fieldset>
+          <button type="submit">Заказать</button>
+        </form>
+      </div>
+    </section>
     <section></section>
   </main>
   <footer class="footer">
