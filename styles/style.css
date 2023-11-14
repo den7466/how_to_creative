@@ -22,6 +22,10 @@
   align-items: center;
 }
 
+.header__menu {
+  position: relative;
+}
+
 .header__menu-button {
   background-color: transparent;
   border: 1px solid #fff;
@@ -30,8 +34,10 @@
   font-family: 'Yandex Sans Text', sans-serif;
   font-size: 20px;
   font-weight: 500;
+  font-style: normal;
   color: #fff;
   cursor: pointer;
+  transition: background-color .3s ease;
 }
 
 .header__menu-button::before {
@@ -44,6 +50,63 @@
   background-size: contain;
   background-position: center;
   margin-right: 14px;
+}
+
+.header__menu-button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.header__menu-button:hover::before {
+  background-image: url(../images/burger_button_black.svg);
+}
+
+.header__menu-button_active {
+  background-color: #fff;
+  color: #000;
+}
+
+.header__menu-button_active::before {
+  background-image: url(../images/burger_button_black.svg);
+}
+
+.header__menu-list {
+  position: absolute;
+  top: 88px;
+  right: 0;
+  display: block;
+  visibility: hidden;
+  background-color: #fff;
+  list-style: none;
+  padding: 15px 0;
+  margin: 0;
+  min-width: 350px;
+  border-radius: 20px;
+  transition: visibility .2s ease;
+}
+
+.header__menu-list_active {
+  visibility: visible;
+}
+
+.header__menu-item {
+  margin: 0;
+  transition: background-color .3s ease;
+}
+
+.header__menu-item:hover {
+  background-color: #acbacc;
+}
+
+.header__menu-link {
+  display: block;
+  color: #000;
+  text-decoration: none;
+  padding: 15px 30px;
+  font-family: 'Yandex Sans Text', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
 }
 
 .cover {
@@ -318,10 +381,12 @@
   background-color: #fff;
   border-radius: 20px;
   margin-top: 60px;
+  transition: background-color .3s ease;
 }
 
 .order__button:hover {
   cursor: pointer;
+  background-color: #acbacc;
 }
 
 .quote {
